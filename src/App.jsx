@@ -8,6 +8,7 @@ import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import References from "./components/References";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -44,6 +45,7 @@ function App() {
             <Experience />
           </StyledWrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <References />
           <StyledWrapper>
             <Education />
             <Contact />

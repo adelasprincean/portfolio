@@ -47,6 +47,9 @@ export const StyledWaveSvg = styled(WaveSvg)`
   .shape-fill {
     fill: rgb(25 25 36);
   }
+  @media (max-width: 768px) {
+    top: -1px;
+  }
 `;
 
 export const StyledTitle = styled.div`
