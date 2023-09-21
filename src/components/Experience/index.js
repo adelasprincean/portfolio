@@ -29,8 +29,9 @@ const Experience = () => {
             {experiences.map((experience, index) => (
               <motion.div
                 variants={fadeIn("left", "spring", index * 0.5, 0.75)}
+                key={experience.id}
               >
-                <TimelineItem key={index}>
+                <TimelineItem>
                   <TimelineSeparator>
                     <TimelineDot variant="outlined" color="secondary" />
                     {index !== experiences.length - 1 && (

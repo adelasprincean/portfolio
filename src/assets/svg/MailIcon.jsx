@@ -23,8 +23,8 @@ const MailIcon = ({ className }) => {
             y2="-1.59657"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF1A3" />
-            <stop offset="1" stop-color="#FF44C5" />
+            <stop stopColor="#FFF1A3" />
+            <stop offset="1" stopColor="#FF44C5" />
           </linearGradient>
         </defs>
       </svg>
