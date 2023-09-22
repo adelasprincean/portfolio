@@ -45,7 +45,7 @@ const StyledCard = styled.div`
 const StyledTop = styled.div`
   width: 100%;
   display: flex;
-  gap: 12px;
+  gap: 13px;
 `;
 
 const StyledBody = styled.div`
