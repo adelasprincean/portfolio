@@ -7,14 +7,10 @@ import {
   StyledTitle,
   StyledDesc,
   StyledCardContainer,
-  StyledInfo,
-  StyledSpan,
-  StyledName,
-  StyledRole,
   StyledArrowsWrapper,
-  StyledPrev,
-  StyledNext,
+  StyledButtonArrow,
 } from "./ReferencesStyles";
+import ReferenceCard from "../Cards/ReferenceCard";
 import { references } from "../../data/constants";
 import { textVariant } from "../../utils/motion";
 
@@ -23,19 +19,15 @@ const References = () => {
   const activeSlide = references[activeIndex];
 
   function handleNext() {
-    if (activeIndex >= references.length - 1) {
-      setActiveIndex(0);
-    } else {
-      setActiveIndex((oldIndex) => oldIndex + 1);
-    }
+    setActiveIndex((oldIndex) => (oldIndex + 1) % references.length);
   }
+
   function handlePrev() {
-    if (activeIndex === 0) {
-      setActiveIndex(references.length - 1);
-    } else {
-      setActiveIndex((oldIndex) => oldIndex - 1);
-    }
+    setActiveIndex((oldIndex) =>
+      oldIndex === 0 ? references.length - 1 : oldIndex - 1
+    );
   }
+
   return (
     <StyledContainer id="References">
       <StyledWrapper>
@@ -43,34 +35,40 @@ const References = () => {
         <StyledDesc variants={textVariant()}>
           See what others have to say about working with me.
         </StyledDesc>
-        <StyledCardContainer>
-          <SwitchTransition component={null}>
+        <StyledCardContainer
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            delay: 1,
+          }}
+        >
+          <SwitchTransition mode="out-in">
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
-              <StyledInfo>
-                <StyledSpan>{activeSlide.description}</StyledSpan>
-                <StyledName>{activeSlide.name}</StyledName>
-                <StyledRole>{activeSlide.role}</StyledRole>
-              </StyledInfo>
+              <ReferenceCard
+                name={activeSlide.name}
+                role={activeSlide.role}
+                description={activeSlide.description}
+              />
             </CSSTransition>
           </SwitchTransition>
         </StyledCardContainer>
         <StyledArrowsWrapper>
-          <StyledPrev
+          <StyledButtonArrow
             onClick={handlePrev}
             role="button"
             tabIndex={0}
             onKeyDown={handlePrev}
           >
             <MdArrowBack />
-          </StyledPrev>
-          <StyledNext
+          </StyledButtonArrow>
+          <StyledButtonArrow
             onClick={handleNext}
             role="button"
             tabIndex={0}
             onKeyDown={handleNext}
           >
             <MdArrowForward />
-          </StyledNext>
+          </StyledButtonArrow>
         </StyledArrowsWrapper>
       </StyledWrapper>
     </StyledContainer>

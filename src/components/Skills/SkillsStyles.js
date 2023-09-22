@@ -101,7 +101,7 @@ export const StyledSkill = styled(motion.div)`
 export const StyledSkillTitle = styled.h2`
   font-size: 28px;
   font-weight: 600;
-  color: ${({ theme }) => theme.white + 99};
+  color: ${({ theme }) => theme.white};
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -117,8 +117,9 @@ export const StyledSkillList = styled.div`
 export const StyledSkillItem = styled.div`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ theme }) => theme.white + 80};
-  border: 1px solid ${({ theme }) => theme.white + 80};
+  color: ${({ theme }) => theme.white};
+  border: 1px solid ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.bg};
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
@@ -138,4 +139,5 @@ export const StyledSkillItem = styled.div`
 export const StyledSkillImage = styled.img`
   width: 24px;
   height: 24px;
+  object-fit: contain;
 `;

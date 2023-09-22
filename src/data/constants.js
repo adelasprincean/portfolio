@@ -23,16 +23,16 @@ export const skills = [
         image:
           "https://www.datocms-assets.com/48401/1627663113-learn-typescript.png?fit=max&fm=webp&w=900",
       },
-      {
-        name: "Redux",
-        image:
-          "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
-      },
-      {
-        name: "Next Js",
-        image:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
-      },
+      // {
+      //   name: "Redux",
+      //   image:
+      //     "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
+      // },
+      // {
+      //   name: "Next Js",
+      //   image:
+      //     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
+      // },
       {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
@@ -113,22 +113,36 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    role: "Content manager and Web assistant",
-    company: "Real Estate Company - Top Imobiliare",
-    date: "Feb 2018 - May 2019",
-    desc: "Enhanced web content and properties, elevating user experience and engagement. Revamped website appearance with original ideas, ensuring consistent styling. Optimized image assets to achieve peak performance scores on Google Lighthouse.Streamlined databases and contributed to efficient, SEO-friendly codebase.Proficiently utilized PHP, Laravel, WordPress, MySQL",
+    role: "Junior web developer",
+    company: "Calibrate Consulting",
+    date: "January 2021 - Present",
+    desc: "I converted complex designs and wireframes into robust, responsive code, developed reusable components in React to enhance development efficiency, incorporated interactive data visualizations with React, Qlik, and D3.js, designed the UI for a quiz app using Figma, and played a significant role in the development of dashboard projects for a prestigious financial institution, all while creating reusable components for Storybook.",
     skills: [
-      "HTML",
-      "CSS",
-      "WordPress",
-      "Php",
-      "Laravel",
-      "Bootstrap",
-      "JavaScript",
+      "React",
+      "Qlik",
+      "D3",
+      "Figma",
+      "MaterialUi",
+      "TypeScript",
+      "Redux",
+      "Css Modules",
     ],
   },
   {
     id: 1,
+    role: "Ireland Export Team clerk",
+    company: "Tesco",
+    date: "March 2021 - December 2021",
+    desc: "I ensured correct and comprehensive documentation for shipments of products of animal origin, monitored and managed freight operations throughout the export process, collaborated closely with exporters and relevant authorities to generate health certificates and required paperwork, and calculated and confirmed the optimal number of products per trailer, optimizing loading efficiency and transportation logistics, all while guaranteeing compliance with health and safety regulations.",
+    skills: [
+      "Regulatory Complianc",
+      "Data Analysis",
+      "Customer Service",
+      "Organizational Skills",
+    ],
+  },
+  {
+    id: 2,
     role: "Warehouse operative",
     company: "Tesco",
     date: "August 2019 - March 2021",
@@ -143,33 +157,19 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
-    role: "Ireland Export Team clerk",
-    company: "Tesco",
-    date: "March 2021 - December 2021",
-    desc: "I ensured correct and comprehensive documentation for shipments of products of animal origin, monitored and managed freight operations throughout the export process, collaborated closely with exporters and relevant authorities to generate health certificates and required paperwork, and calculated and confirmed the optimal number of products per trailer, optimizing loading efficiency and transportation logistics, all while guaranteeing compliance with health and safety regulations.",
-    skills: [
-      "Regulatory Complianc",
-      "Data Analysis",
-      "Customer Service",
-      "Organizational Skills",
-    ],
-  },
-  {
     id: 3,
-    role: "Junior web developer",
-    company: "Calibrate Consulting",
-    date: "January 2021 - Present",
-    desc: "I converted complex designs and wireframes into robust, responsive code, developed reusable components in React to enhance development efficiency, incorporated interactive data visualizations with React, Qlik, and D3.js, designed the UI for a quiz app using Figma, and played a significant role in the development of dashboard projects for a prestigious financial institution, all while creating reusable components for Storybook.",
+    role: "Content manager and Web assistant",
+    company: "Real Estate Company - Top Imobiliare",
+    date: "Feb 2018 - May 2019",
+    desc: "Enhanced web content and properties, elevating user experience and engagement. Revamped website appearance with original ideas, ensuring consistent styling. Optimized image assets to achieve peak performance scores on Google Lighthouse.Streamlined databases and contributed to efficient, SEO-friendly codebase.Proficiently utilized PHP, Laravel, WordPress, MySQL",
     skills: [
-      "React",
-      "Qlik",
-      "D3",
-      "Figma",
-      "MaterialUi",
-      "TypeScript",
-      "Redux",
-      "Css Modules",
+      "HTML",
+      "CSS",
+      "WordPress",
+      "Php",
+      "Laravel",
+      "Bootstrap",
+      "JavaScript",
     ],
   },
 ];
@@ -209,13 +209,13 @@ export const references = [
     name: "Nicolae Casir",
     role: "Full Stack Web Developer",
   },
-  // {
-  //   id: 1,
-  //   description:
-  //     "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-  //   name: "Lorem Ipsum",
-  //   role: "Lorem Ipsum",
-  // },
+  {
+    id: 1,
+    description:
+      "I worked with Adela for about 1 year to deliver a very complex product for one of our financial customers. Adela supported the web development side and got actively involved in all stages of the project from design to final implementation. I was impressed by how Adela took ownership of her piece of work requiring minimal guidance yet she is not afraid of reaching out for support whenever needed. She is proactive in all that she does and works with a vision of delivering the best outcome, for instance she identified changes needed to give users the best experience even though some were not in the spec. In my c.2 decades of professional experience, Adela is the best web developer I have worked alongside, she has proven technical skills but what makes Adela different is that these are coupled with a sense of ownership and a drive for excellence.",
+    name: "Ines Rodriguez Roza",
+    role: "Senior Data Analyst",
+  },
   // {
   //   id: 2,
   //   description:
