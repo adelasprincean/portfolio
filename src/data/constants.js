@@ -1,11 +1,11 @@
 export const Bio = {
   name: "Adela Sprincean",
-  roles: ["Web Developer", "Front-end Developer"],
+  roles: ["Front End Developer", "Web Developer", "UI/UX Designer"],
   description:
-    "I'm an enthusiastic and adaptable individual, continuously seeking fresh challenges. Fueled by a deep passion for learning, I'm committed to delivering top-notch outcomes. Possessing a positive outlook and a belief in growth, I'm prepared to make a substantial impact and attain remarkable achievements.",
-  github: "https://github.com/adelaistrati",
+    "User-focused front end developer with an eye for design and a deep understanding of usability goals. Perfectly marries functional requirements and creative elements to produce optimal interfaces. Skilled at managing time, projects and resources to accomplish development goals. Knowledge of HTML, CSS, JavaScript, and React.",
+  github: "https://github.com/adelasprincean",
   resume:
-    "https://drive.google.com/file/d/19IRx4kDarGwAmYqTmmN9-GNP7E0auuCp/view?usp=sharing",
+    "https://drive.google.com/file/d/1obXNx8PpJAWBafJqUdEo9CDXz8nPGdJ8/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/adela-sprincean-64236a134/",
 };
 
@@ -113,10 +113,10 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    role: "Junior web developer",
+    role: "Web Developer",
     company: "Calibrate Consulting",
     date: "January 2021 - Present",
-    desc: "I converted complex designs and wireframes into robust, responsive code, developed reusable components in React to enhance development efficiency, incorporated interactive data visualizations with React, Qlik, and D3.js, designed the UI for a quiz app using Figma, and played a significant role in the development of dashboard projects for a prestigious financial institution, all while creating reusable components for Storybook.",
+    desc: "Converted complex designs and wireframes into robust, responsive code, developed reusable components in React to enhance development efficiency, incorporated interactive data visualizations with React, Qlik, and D3.js, designed the UI for a quiz app using Figma, and played a significant role in the development of dashboard projects for a prestigious financial institution, all while creating reusable components for Storybook.",
     skills: [
       "React",
       "Qlik",
@@ -124,7 +124,6 @@ export const experiences = [
       "Figma",
       "MaterialUi",
       "TypeScript",
-      "Redux",
       "Css Modules",
     ],
   },
@@ -133,7 +132,7 @@ export const experiences = [
     role: "Ireland Export Team clerk",
     company: "Tesco",
     date: "March 2021 - December 2021",
-    desc: "I ensured correct and comprehensive documentation for shipments of products of animal origin, monitored and managed freight operations throughout the export process, collaborated closely with exporters and relevant authorities to generate health certificates and required paperwork, and calculated and confirmed the optimal number of products per trailer, optimizing loading efficiency and transportation logistics, all while guaranteeing compliance with health and safety regulations.",
+    desc: "Ensured correct and comprehensive documentation for shipments of products of animal origin, monitored and managed freight operations throughout the export process, collaborated closely with exporters and relevant authorities to generate health certificates and required paperwork, and calculated and confirmed the optimal number of products per trailer, optimizing loading efficiency and transportation logistics, all while guaranteeing compliance with health and safety regulations.",
     skills: [
       "Regulatory Complianc",
       "Data Analysis",
@@ -158,7 +157,7 @@ export const experiences = [
   },
   {
     id: 3,
-    role: "Content manager and Web assistant",
+    role: "Front end developer",
     company: "Real Estate Company - Top Imobiliare",
     date: "Feb 2018 - May 2019",
     desc: "Enhanced web content and properties, elevating user experience and engagement. Revamped website appearance with original ideas, ensuring consistent styling. Optimized image assets to achieve peak performance scores on Google Lighthouse.Streamlined databases and contributed to efficient, SEO-friendly codebase.Proficiently utilized PHP, Laravel, WordPress, MySQL",

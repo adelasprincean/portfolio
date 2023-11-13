@@ -161,7 +161,7 @@ export const StyledMobileMenu = styled.div`
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
-export const StyledMobileLink = styled(LinkR)`
+export const StyledMobileLink = styled.a`
   color: ${({ theme }) => theme.white};
   font-weight: 500;
   cursor: pointer;
