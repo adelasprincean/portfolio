@@ -5,7 +5,7 @@ export const Bio = {
     "User-focused front end developer with an eye for design and a deep understanding of usability goals. Perfectly marries functional requirements and creative elements to produce optimal interfaces. Skilled at managing time, projects and resources to accomplish development goals. Knowledge of HTML, CSS, JavaScript, and React.",
   github: "https://github.com/adelasprincean",
   resume:
-    "https://drive.google.com/file/d/1obXNx8PpJAWBafJqUdEo9CDXz8nPGdJ8/view?usp=drive_link",
+    "https://drive.google.com/file/d/1bVSiAv3B2-9EKWHBgXJV5YASeI7ZsNtq/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/adela-sprincean-64236a134/",
 };
 
