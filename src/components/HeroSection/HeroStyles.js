@@ -204,19 +204,7 @@ export const StyledResumeButton = styled.a`
 export const StyledOuterContainer = styled.div`
   position: absolute;
   right: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  // Media queries for responsive styles
-  @media screen and (max-width: 640px) {
-    bottom: 15px;
-  }
-
-  @media screen and (min-width: 641px) {
-    bottom: 5px;
-  }
+  bottom: 15px;
 `;
 
 // Create a styled div for the inner container

@@ -39,7 +39,7 @@ export const StyledWaveSvg = styled(WaveSvg)`
   & svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 56px;
     transform: rotateY(180deg);
   }
