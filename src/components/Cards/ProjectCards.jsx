@@ -79,19 +79,53 @@ const StyledDescription = styled.div`
   text-overflow: ellipsis;
 `;
 
-const ProjectCards = ({ project, setOpenModal }) => {
+const StyledButtonGroup = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px 0px;
+  gap: 12px;
+`;
+
+const StyledButton = styled.a`
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary};
+  padding: 12px 16px;
+  border: 1.8px solid ${({ theme }) => theme.text_primary};
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  &:hover {
+    background: ${({ theme }) => theme.bg};
+    border: 1.8px solid ${({ theme }) => theme.bg};
+    color: ${({ theme }) => theme.white};
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+`;
+
+const ProjectCards = ({ project }) => {
   return (
-    <StyledCard onClick={() => setOpenModal({ state: true, project: project })}>
+    <StyledCard>
       <StyledImage src={project.image} />
       <StyledTags>
         {project.tags?.map((tag, index) => (
-          <StyledTag>{tag}</StyledTag>
+          <StyledTag key={tag}>{tag}</StyledTag>
         ))}
       </StyledTags>
       <StyledDetails>
         <StyledTitle>{project.title}</StyledTitle>
         <StyledDescription>{project.description}</StyledDescription>
       </StyledDetails>
+      <StyledButtonGroup>
+        <StyledButton href={project?.github} target="new">
+          View Code
+        </StyledButton>
+      </StyledButtonGroup>
     </StyledCard>
   );
 };

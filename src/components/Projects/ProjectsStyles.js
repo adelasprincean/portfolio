@@ -39,16 +39,6 @@ export const StyledTitle = styled(motion.div)`
   }
 `;
 
-export const StyledDesc = styled(motion.p)`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.white + 99};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-
 export const StyledCardContainer = styled.div`
   display: flex;
   justify-content: center;

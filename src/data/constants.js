@@ -191,12 +191,13 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "",
-    description: "",
-    image: "",
-    tags: [""],
-    github: "",
-    webapp: "",
+    title: "Meals",
+    description:
+      "A website showcasing delicious recipes created with Next.js and CSS Modules.",
+    image:
+      "https://github.com/adelasprincean/portfolio/assets/51912083/65d66737-2ffe-423f-86a2-7e8a0d9d9287",
+    tags: ["Next Js", "React Js", "CSS Modules"],
+    github: "https://github.com/adelasprincean/meals",
   },
 ];
 

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { mainTheme } from "./utils/Themes";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -12,7 +11,6 @@ import References from "./components/References";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ProjectDetails from "./components/ProjectDetails";
 import ScrollToTop from "./components/ScrollToTopButton";
 
 const StyledBody = styled.div`
@@ -32,8 +30,6 @@ const StyledWrapper = styled.div`
 `;
 
 function App() {
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
-
   return (
     <ThemeProvider theme={mainTheme}>
       <Router>
@@ -44,16 +40,13 @@ function App() {
             <Skills />
             <Experience />
           </StyledWrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Projects />
           <References />
           <StyledWrapper>
             <Education />
             <Contact />
           </StyledWrapper>
           <Footer />
-          {openModal.state && (
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          )}
           <ScrollToTop />
         </StyledBody>
       </Router>
