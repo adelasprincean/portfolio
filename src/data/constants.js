@@ -199,6 +199,16 @@ export const projects = [
     tags: ["Next Js", "React Js", "CSS Modules"],
     github: "https://github.com/adelasprincean/meals",
   },
+  {
+    id: 1,
+    title: "Restaurant",
+    description:
+      "A website showcasing culinary adventure created with React and CSS.",
+    image:
+      "https://github.com/adelasprincean/portfolio/assets/51912083/f97f6598-ab3f-4051-a1de-f00c3a5402f0",
+    tags: ["React Js", "CSS", "JavaScript"],
+    github: "https://github.com/adelasprincean/restaurant",
+  },
 ];
 
 export const references = [
