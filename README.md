@@ -34,6 +34,8 @@ To run this project locally, follow these steps:
 4. Start the development server: npm start
 5. Open your browser and visit: http://localhost:3000
 
+![restaurant](https://github.com/adelasprincean/portfolio/assets/51912083/f97f6598-ab3f-4051-a1de-f00c3a5402f0)
+
 
 ## Contact
 
