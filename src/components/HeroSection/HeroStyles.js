@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaArrowDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const StyledHeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -198,6 +199,8 @@ export const StyledResumeButton = styled.a`
   @media (max-width: 640px) {
     padding: 12px 0;
     font-size: 18px;
+    width: 100%;
+    max-width: 100%;
   }
 `;
 
@@ -223,4 +226,47 @@ export const StyledInnerContainer = styled.div`
 export const StyledArrowDownIcon = styled(FaArrowDown)`
   font-size: 15px; // Adjust the size as needed
   color: ${({ theme }) => theme.white}; // Change the color as needed
+`;
+
+export const StyledHeroButtons = styled.div`
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    width: 100%;
+  }
+`;
+
+export const StyledShopifyButton = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+  min-height: 52px;
+
+  border-radius: 24px;
+  border: 2px solid #e879e7;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #e879e7;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
 `;

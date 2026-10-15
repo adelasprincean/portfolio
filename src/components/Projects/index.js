@@ -4,6 +4,8 @@ import {
   StyledWrapper,
   StyledTitle,
   StyledCardContainer,
+  StyledShopifyCTA,
+  StyledShopifyLink,
 } from "./ProjectsStyles";
 import ProjectCard from "../Cards/ProjectCards";
 import { motion } from "framer-motion";
@@ -25,6 +27,11 @@ const Projects = () => {
             </motion.div>
           ))}
         </StyledCardContainer>
+        <StyledShopifyCTA>
+        <StyledShopifyLink to="/shopify-portfolio">
+          View My Shopify Portfolio →
+        </StyledShopifyLink>
+      </StyledShopifyCTA>
       </StyledWrapper>
     </StyledContainer>
   );

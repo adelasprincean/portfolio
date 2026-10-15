@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const StyledContainer = styled.div`
   background: rgb(25, 25, 36);
@@ -45,4 +46,25 @@ export const StyledCardContainer = styled.div`
   align-items: center;
   gap: 28px;
   flex-wrap: wrap;
+`;
+
+export const StyledShopifyCTA = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+`;
+
+export const StyledShopifyLink = styled(Link)`
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 24px;
+  background: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.white};
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: ${({ theme }) => theme.bg};
+  }
 `;

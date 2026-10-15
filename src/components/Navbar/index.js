@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTheme } from "styled-components";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaPhoneAlt } from "react-icons/fa";
+
 import {
   StyledNav,
   StyledNavContainer,
@@ -8,20 +9,24 @@ import {
   StyledLogoIcon,
   StyledSpan,
   StyledMobileIcon,
+  StyledMobileActions,
   StyledNavItems,
   StyledNavLink,
   StyledButtonContainer,
   StyledGithubButton,
   StyledMobileMenu,
   StyledMobileLink,
+  StyledRouterLink,
+  StyledMobileRouterLink,
+  PhoneButton,
 } from "./NavbarStyles";
+
 import { Bio } from "../../data/constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
 
-  // Define links for nav
   const navLinks = [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
@@ -38,11 +43,24 @@ const Navbar = () => {
     <StyledNav>
       <StyledNavContainer>
         <StyledNavLogo to="/">
-          <StyledLogoIcon /> <StyledSpan>Portfolio</StyledSpan>
+          <StyledLogoIcon />
+          <StyledSpan>Portfolio</StyledSpan>
         </StyledNavLogo>
-        <StyledMobileIcon>
-          <FaBars onClick={toggleMenu} />
-        </StyledMobileIcon>
+
+        <StyledMobileActions>
+          <PhoneButton
+            href={`tel:${Bio.phone}`}
+            aria-label="Call Adela"
+            title="Call me"
+          >
+            <FaPhoneAlt />
+          </PhoneButton>
+
+          <StyledMobileIcon onClick={toggleMenu}>
+            <FaBars />
+          </StyledMobileIcon>
+        </StyledMobileActions>
+
         <StyledNavItems>
           {navLinks.map((link) => (
             <StyledNavLink
@@ -53,13 +71,31 @@ const Navbar = () => {
               {link.label}
             </StyledNavLink>
           ))}
+
+          <StyledRouterLink to="/shopify-portfolio">
+            Shopify
+          </StyledRouterLink>
         </StyledNavItems>
+
         <StyledButtonContainer>
-          <StyledGithubButton href={Bio.github} target="_blank">
+          <PhoneButton
+            href={`tel:${Bio.phone}`}
+            aria-label="Call Adela"
+            title="Call me"
+          >
+            <FaPhoneAlt />
+          </PhoneButton>
+
+          <StyledGithubButton
+            href={Bio.github}
+            target="_blank"
+            rel="noreferrer"
+          >
             Github Profile
           </StyledGithubButton>
         </StyledButtonContainer>
       </StyledNavContainer>
+
       {isOpen && (
         <StyledMobileMenu isOpen={isOpen}>
           {navLinks.map((link) => (
@@ -71,6 +107,14 @@ const Navbar = () => {
               {link.label}
             </StyledMobileLink>
           ))}
+
+          <StyledMobileRouterLink
+            to="/shopify-portfolio"
+            onClick={toggleMenu}
+          >
+            Shopify Portfolio
+          </StyledMobileRouterLink>
+
           <StyledGithubButton
             style={{
               padding: "10px 16px",
@@ -81,6 +125,7 @@ const Navbar = () => {
             }}
             href={Bio.github}
             target="_blank"
+            rel="noreferrer"
           >
             Github Profile
           </StyledGithubButton>

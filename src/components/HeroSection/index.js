@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   StyledHeroContainer,
   StyledHeroBg,
@@ -14,6 +15,8 @@ import {
   StyledOuterContainer,
   StyledInnerContainer,
   StyledArrowDownIcon,
+  StyledHeroButtons,
+  StyledShopifyButton,
 } from "./HeroStyles";
 import HeroImg from "../../assets/images/HeroImg.jpg";
 import Typewriter from "typewriter-effect";
@@ -44,9 +47,15 @@ const HeroSection = () => {
             </StyledSpan>
           </StyledTextLoop>
           <StyledSubTitle>{Bio.description}</StyledSubTitle>
-          <StyledResumeButton href={Bio.resume} target="display">
+         <StyledHeroButtons>
+          <StyledResumeButton href={Bio.resume} target="_blank">
             Check Resume
           </StyledResumeButton>
+
+          <StyledShopifyButton to="/shopify-portfolio">
+            View Shopify Portfolio
+          </StyledShopifyButton>
+        </StyledHeroButtons>
         </StyledHeroLeftContainer>
         <StyledHeroRightContainer id="right">
           <StyledImg src={HeroImg} alt="hero-img" />
